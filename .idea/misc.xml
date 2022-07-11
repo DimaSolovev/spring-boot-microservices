@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/photo-app-api-users/pom.xml" />
         <option value="$PROJECT_DIR$/photo_app_discovery_service/pom.xml" />
         <option value="$PROJECT_DIR$/photo-app-api-account-management/pom.xml" />
+        <option value="$PROJECT_DIR$/api-gateway/pom.xml" />
       </list>
     </option>
   </component>
