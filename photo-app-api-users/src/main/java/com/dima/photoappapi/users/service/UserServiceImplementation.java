@@ -23,9 +23,13 @@ public class UserServiceImplementation implements UserService{
         userDetails.setUserId(UUID.randomUUID().toString());
         ModelMapper modelMapper = new ModelMapper();
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+
         UserEntity userEntity = modelMapper.map(userDetails, UserEntity.class);
         userEntity.setEncryptedPassword("test");
+
         usersRepository.save(userEntity);
-        return null;
+
+        UserDto returnValue = modelMapper.map(userEntity, UserDto.class);
+        return returnValue;
     }
 }
