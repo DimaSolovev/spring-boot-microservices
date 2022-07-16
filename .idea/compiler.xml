@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="photo-app-api-users" />
-        <module name="photo_app_discovery_service" />
-        <module name="photo-app-api-account-management" />
+        <module name="photoapp-api-config-server" />
         <module name="mobile-app-ws" />
+        <module name="photo-app-api-account-management" />
+        <module name="photo-app-api-users" />
         <module name="api-gateway" />
+        <module name="photo_app_discovery_service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="photo-app-api-account-management" target="11" />
       <module name="photo-app-api-users" target="11" />
       <module name="photo_app_discovery_service" target="11" />
+      <module name="photoapp-api-config-server" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -28,6 +30,7 @@
       <module name="photo-app-api-account-management" options="-parameters" />
       <module name="photo-app-api-users" options="-parameters" />
       <module name="photo_app_discovery_service" options="-parameters" />
+      <module name="photoapp-api-config-server" options="-parameters" />
     </option>
   </component>
 </project>
