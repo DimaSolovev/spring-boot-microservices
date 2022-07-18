@@ -8,6 +8,7 @@ import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -27,7 +28,8 @@ public class UsersController {
 
     @GetMapping("/status/check")
     public String status() {
-        return "working on port " + environment.getProperty("local.server.port");
+        return "working on port " + environment.getProperty("local.server.port")
+                + ", with token = " + environment.getProperty("token.secret");
     }
 
     @PostMapping(//какой формат может получать и отправлять. В POSTMAN headers: Content-Type и Accept
