@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/api-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mobile-app-ws/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/photo-app-api-account-management/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/photo-app-api-albums/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/photo-app-api-users/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/photo_app_discovery_service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/photoapp-api-config-server/src/main/java" charset="UTF-8" />

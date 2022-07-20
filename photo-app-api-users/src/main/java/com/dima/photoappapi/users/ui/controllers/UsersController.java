@@ -4,6 +4,7 @@ import com.dima.photoappapi.users.service.UserService;
 import com.dima.photoappapi.users.shared.UserDto;
 import com.dima.photoappapi.users.ui.model.CreateUserRequestModel;
 import com.dima.photoappapi.users.ui.model.CreateUserResponseModel;
+import com.dima.photoappapi.users.ui.model.UserResponseModel;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,5 +46,14 @@ public class UsersController {
 
         CreateUserResponseModel returnValue = modelMapper.map(createdUser, CreateUserResponseModel.class);
         return new ResponseEntity<>(returnValue, HttpStatus.CREATED);
+    }
+
+    @GetMapping(value="/{userId}", produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
+    public ResponseEntity<UserResponseModel> getUser(@PathVariable("userId") String userId) {
+
+        UserDto userDto = userService.getUserByUserId(userId);
+        UserResponseModel returnValue = new ModelMapper().map(userDto, UserResponseModel.class);
+
+        return ResponseEntity.status(HttpStatus.OK).body(returnValue);
     }
 }
