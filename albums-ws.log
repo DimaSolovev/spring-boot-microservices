@@ -1,675 +1,80 @@
-2022-07-20 10:00:48.862  INFO 3540 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 10:00:49.969  WARN 3540 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 10:00:50.170  INFO 3540 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 10:00:50.275  INFO 3540 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$1f5bad2b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 10:00:50.871  INFO 3540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 10:00:50.903  INFO 3540 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 10:00:50.904  INFO 3540 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 10:00:50.913  INFO 3540 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 10:00:51.084  INFO 3540 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 10:00:51.085  INFO 3540 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2203 ms
-2022-07-20 10:00:51.189  WARN 3540 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 10:00:51.189  INFO 3540 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 10:00:51.199  INFO 3540 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1b204d73
-2022-07-20 10:00:52.291  WARN 3540 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 10:00:52.291  INFO 3540 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 10:00:52.521  INFO 3540 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 10:00:52.963  INFO 3540 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-20 10:00:53.435  INFO 3540 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 10:00:53.596  INFO 3540 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52476 (http) with context path ''
-2022-07-20 10:00:53.597  INFO 3540 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 52476
-2022-07-20 10:00:53.604  INFO 3540 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 10:00:53.646  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 10:00:53.828  INFO 3540 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 10:00:53.828  INFO 3540 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 10:00:54.004  INFO 3540 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 10:00:54.004  INFO 3540 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 10:00:54.184  INFO 3540 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:00:54.441  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 10:00:54.441  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 10:00:54.442  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 10:00:54.442  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 10:00:54.442  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 10:00:54.442  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 10:00:54.442  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 10:00:54.645  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 10:00:54.649  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 10:00:54.652  INFO 3540 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 10:00:54.658  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658275254656 with initial instances count: 1
-2022-07-20 10:00:54.659  INFO 3540 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 10:00:54.664  INFO 3540 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658275254661, current=UP, previous=STARTING]
-2022-07-20 10:00:54.668  INFO 3540 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:8fa00954d16073314556daf8d9a3cd40: registering service...
-2022-07-20 10:00:54.675  INFO 3540 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 7.958 seconds (JVM running for 9.984)
-2022-07-20 10:00:54.725  INFO 3540 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:8fa00954d16073314556daf8d9a3cd40 - registration status: 204
-2022-07-20 10:00:55.385  INFO 3540 --- [RMI TCP Connection(3)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 10:00:55.386  INFO 3540 --- [RMI TCP Connection(3)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 10:00:55.396  INFO 3540 --- [RMI TCP Connection(3)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2022-07-20 10:05:54.451  INFO 3540 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:10:54.460  INFO 3540 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:17:21.966  INFO 10012 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 10:17:23.383  WARN 10012 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 10:17:23.743  INFO 10012 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 10:17:23.852  INFO 10012 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$de6489ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 10:17:24.469  INFO 10012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 10:17:24.504  INFO 10012 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 10:17:24.505  INFO 10012 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 10:17:24.512  INFO 10012 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 10:17:24.704  INFO 10012 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 10:17:24.705  INFO 10012 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2723 ms
-2022-07-20 10:17:24.817  WARN 10012 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 10:17:24.817  INFO 10012 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 10:17:24.828  INFO 10012 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@27565491
-2022-07-20 10:17:25.638  WARN 10012 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 10:17:25.639  INFO 10012 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 10:17:25.846  INFO 10012 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 10:17:26.284  INFO 10012 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-20 10:17:26.734  INFO 10012 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 10:17:26.886  INFO 10012 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58169 (http) with context path ''
-2022-07-20 10:17:26.887  INFO 10012 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 58169
-2022-07-20 10:17:26.894  INFO 10012 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 10:17:26.937  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 10:17:27.149  INFO 10012 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 10:17:27.149  INFO 10012 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 10:17:27.308  INFO 10012 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 10:17:27.309  INFO 10012 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 10:17:27.511  INFO 10012 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:17:27.776  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 10:17:27.777  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 10:17:27.777  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 10:17:27.777  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 10:17:27.777  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 10:17:27.778  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 10:17:27.778  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 10:17:27.889  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 10:17:27.892  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 10:17:27.895  INFO 10012 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 10:17:27.900  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658276247898 with initial instances count: 0
-2022-07-20 10:17:27.901  INFO 10012 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 10:17:27.902  INFO 10012 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658276247901, current=UP, previous=STARTING]
-2022-07-20 10:17:27.904  INFO 10012 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:83881504be6f9a3f13230e549826d376: registering service...
-2022-07-20 10:17:27.909  INFO 10012 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 8.315 seconds (JVM running for 10.141)
-2022-07-20 10:17:27.973  INFO 10012 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:83881504be6f9a3f13230e549826d376 - registration status: 204
-2022-07-20 10:17:28.170  INFO 10012 --- [RMI TCP Connection(1)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 10:17:28.171  INFO 10012 --- [RMI TCP Connection(1)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 10:17:28.182  INFO 10012 --- [RMI TCP Connection(1)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2022-07-20 10:17:57.900  INFO 10012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 10:17:57.901  INFO 10012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 10:17:57.901  INFO 10012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 10:17:57.902  INFO 10012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 10:17:57.902  INFO 10012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 10:17:57.902  INFO 10012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 10:17:57.903  INFO 10012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 10:17:57.960  INFO 10012 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 10:22:27.795  INFO 10012 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:27:27.811  INFO 10012 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:37:30.815  INFO 14296 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 10:37:33.272  WARN 14296 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 10:37:33.719  INFO 14296 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 10:37:33.940  INFO 14296 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d01b4b33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 10:37:35.368  INFO 14296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 10:37:35.446  INFO 14296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 10:37:35.448  INFO 14296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 10:37:35.464  INFO 14296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 10:37:35.836  INFO 14296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 10:37:35.837  INFO 14296 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5003 ms
-2022-07-20 10:37:36.094  WARN 14296 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 10:37:36.095  INFO 14296 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 10:37:36.118  INFO 14296 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@69f36cf8
-2022-07-20 10:37:37.597  WARN 14296 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 10:37:37.598  INFO 14296 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 10:37:37.920  INFO 14296 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 10:37:38.473  INFO 14296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-20 10:37:39.083  INFO 14296 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 10:37:39.296  INFO 14296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 54800 (http) with context path ''
-2022-07-20 10:37:39.298  INFO 14296 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 54800
-2022-07-20 10:37:39.308  INFO 14296 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 10:37:39.353  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 10:37:39.566  INFO 14296 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 10:37:39.567  INFO 14296 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 10:37:39.753  INFO 14296 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 10:37:39.753  INFO 14296 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 10:37:39.977  INFO 14296 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:37:40.320  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 10:37:40.321  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 10:37:40.322  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 10:37:40.322  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 10:37:40.323  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 10:37:40.324  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 10:37:40.324  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 10:37:40.771  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 10:37:40.779  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 10:37:40.784  INFO 14296 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 10:37:40.803  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658277460795 with initial instances count: 0
-2022-07-20 10:37:40.806  INFO 14296 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 10:37:40.808  INFO 14296 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658277460808, current=UP, previous=STARTING]
-2022-07-20 10:37:40.813  INFO 14296 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:0c9fdd7d3373331374d94e813b735497: registering service...
-2022-07-20 10:37:40.819  INFO 14296 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 12.899 seconds (JVM running for 15.275)
-2022-07-20 10:37:41.070  INFO 14296 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:0c9fdd7d3373331374d94e813b735497 - registration status: 204
-2022-07-20 10:37:41.664  INFO 14296 --- [RMI TCP Connection(12)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 10:37:41.665  INFO 14296 --- [RMI TCP Connection(12)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 10:37:41.680  INFO 14296 --- [RMI TCP Connection(12)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
-2022-07-20 10:38:10.787  INFO 14296 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 10:38:10.788  INFO 14296 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 10:38:10.788  INFO 14296 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 10:38:10.788  INFO 14296 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 10:38:10.789  INFO 14296 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 10:38:10.789  INFO 14296 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 10:38:10.789  INFO 14296 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 10:38:10.841  INFO 14296 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 10:42:40.338  INFO 14296 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:47:40.343  INFO 14296 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:52:40.352  INFO 14296 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:57:02.543  INFO 12772 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 10:57:03.828  WARN 12772 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 10:57:04.079  INFO 12772 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 10:57:04.213  INFO 12772 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$dfa78ec1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 10:57:04.907  INFO 12772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 10:57:04.949  INFO 12772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 10:57:04.949  INFO 12772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 10:57:04.957  INFO 12772 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 10:57:05.172  INFO 12772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 10:57:05.172  INFO 12772 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2613 ms
-2022-07-20 10:57:05.309  WARN 12772 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 10:57:05.310  INFO 12772 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 10:57:05.321  INFO 12772 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@508c74c2
-2022-07-20 10:57:06.319  WARN 12772 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 10:57:06.319  INFO 12772 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 10:57:06.599  INFO 12772 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 10:57:07.087  WARN 12772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-07-20 10:57:07.575  INFO 12772 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 10:57:07.741  INFO 12772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 56234 (http) with context path ''
-2022-07-20 10:57:07.743  INFO 12772 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 56234
-2022-07-20 10:57:07.750  INFO 12772 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 10:57:07.800  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 10:57:08.038  INFO 12772 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 10:57:08.038  INFO 12772 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 10:57:08.332  INFO 12772 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 10:57:08.332  INFO 12772 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 10:57:08.677  INFO 12772 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 10:57:09.224  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 10:57:09.225  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 10:57:09.225  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 10:57:09.225  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 10:57:09.226  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 10:57:09.226  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 10:57:09.227  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 10:57:09.488  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 10:57:09.493  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 10:57:09.501  INFO 12772 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 10:57:09.513  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658278629510 with initial instances count: 0
-2022-07-20 10:57:09.515  INFO 12772 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 10:57:09.517  INFO 12772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658278629517, current=UP, previous=STARTING]
-2022-07-20 10:57:09.521  INFO 12772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:5b4e87087572803ba7f54ebfc7f7bd69: registering service...
-2022-07-20 10:57:09.529  INFO 12772 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 9.574 seconds (JVM running for 11.512)
-2022-07-20 10:57:09.652  INFO 12772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:5b4e87087572803ba7f54ebfc7f7bd69 - registration status: 204
-2022-07-20 10:57:09.994  INFO 12772 --- [RMI TCP Connection(7)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 10:57:09.995  INFO 12772 --- [RMI TCP Connection(7)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 10:57:10.015  INFO 12772 --- [RMI TCP Connection(7)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
-2022-07-20 10:57:39.502  INFO 12772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 10:57:39.502  INFO 12772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 10:57:39.502  INFO 12772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 10:57:39.502  INFO 12772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 10:57:39.503  INFO 12772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 10:57:39.503  INFO 12772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 10:57:39.503  INFO 12772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 10:57:39.555  INFO 12772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 11:02:09.234  INFO 12772 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 11:07:09.250  INFO 12772 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 11:13:09.323  INFO 15796 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 11:13:11.331  WARN 15796 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 11:13:11.805  INFO 15796 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 11:13:12.031  INFO 15796 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bb08e7a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 11:13:13.320  INFO 15796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 11:13:13.379  INFO 15796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 11:13:13.381  INFO 15796 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 11:13:13.394  INFO 15796 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 11:13:13.693  INFO 15796 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 11:13:13.693  INFO 15796 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4354 ms
-2022-07-20 11:13:13.849  WARN 15796 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 11:13:13.849  INFO 15796 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 11:13:13.865  INFO 15796 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@26b251c0
-2022-07-20 11:13:15.031  WARN 15796 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 11:13:15.032  INFO 15796 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 11:13:15.400  INFO 15796 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 11:13:16.224  WARN 15796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-07-20 11:13:17.203  INFO 15796 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 11:13:17.526  INFO 15796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 51321 (http) with context path ''
-2022-07-20 11:13:17.528  INFO 15796 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 51321
-2022-07-20 11:13:17.534  INFO 15796 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 11:13:17.585  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 11:13:17.858  INFO 15796 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 11:13:17.859  INFO 15796 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 11:13:18.034  INFO 15796 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 11:13:18.034  INFO 15796 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 11:13:18.249  INFO 15796 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 11:13:18.556  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 11:13:18.557  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 11:13:18.557  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 11:13:18.557  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 11:13:18.557  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 11:13:18.558  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 11:13:18.558  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 11:13:18.725  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 11:13:18.731  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 11:13:18.735  INFO 15796 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 11:13:18.745  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658279598742 with initial instances count: 0
-2022-07-20 11:13:18.748  INFO 15796 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 11:13:18.749  INFO 15796 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658279598749, current=UP, previous=STARTING]
-2022-07-20 11:13:18.752  INFO 15796 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:0b915875048fd9ead592b993bc102b23: registering service...
-2022-07-20 11:13:18.758  INFO 15796 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 12.397 seconds (JVM running for 14.391)
-2022-07-20 11:13:18.864  INFO 15796 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:0b915875048fd9ead592b993bc102b23 - registration status: 204
-2022-07-20 11:13:19.582  INFO 15796 --- [RMI TCP Connection(3)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 11:13:19.583  INFO 15796 --- [RMI TCP Connection(3)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 11:13:19.594  INFO 15796 --- [RMI TCP Connection(3)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2022-07-20 11:13:48.733  INFO 15796 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 11:13:48.733  INFO 15796 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 11:13:48.733  INFO 15796 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 11:13:48.733  INFO 15796 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 11:13:48.734  INFO 15796 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 11:13:48.734  INFO 15796 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 11:13:48.734  INFO 15796 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 11:13:48.786  INFO 15796 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 11:16:44.672  INFO 15796 --- [http-nio-auto-1-exec-1] c.a.p.a.a.i.c.AlbumsController           : Returning 2 albums
-2022-07-20 11:17:13.665  INFO 15796 --- [http-nio-auto-1-exec-3] c.a.p.a.a.i.c.AlbumsController           : Returning 2 albums
-2022-07-20 11:18:18.571  INFO 15796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 11:23:18.580  INFO 15796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 11:28:18.585  INFO 15796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 11:33:18.590  INFO 15796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 11:38:18.594  INFO 15796 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 11:45:52.312  INFO 11500 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 11:45:54.303  WARN 11500 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 11:45:54.892  INFO 11500 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 11:45:55.153  INFO 11500 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$885a3953] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 11:45:56.491  INFO 11500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 11:45:56.579  INFO 11500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 11:45:56.580  INFO 11500 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 11:45:56.594  INFO 11500 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 11:45:56.962  INFO 11500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 11:45:56.963  INFO 11500 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4630 ms
-2022-07-20 11:45:57.097  WARN 11500 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 11:45:57.098  INFO 11500 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 11:45:57.109  INFO 11500 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7135f554
-2022-07-20 11:45:58.144  WARN 11500 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 11:45:58.144  INFO 11500 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 11:45:58.420  INFO 11500 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 11:45:58.965  WARN 11500 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-07-20 11:45:59.521  INFO 11500 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 11:45:59.707  INFO 11500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 63888 (http) with context path ''
-2022-07-20 11:45:59.708  INFO 11500 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 63888
-2022-07-20 11:45:59.715  INFO 11500 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 11:45:59.760  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 11:45:59.969  INFO 11500 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 11:45:59.969  INFO 11500 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 11:46:00.148  INFO 11500 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 11:46:00.149  INFO 11500 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 11:46:00.375  INFO 11500 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 11:46:00.691  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 11:46:00.692  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 11:46:00.692  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 11:46:00.692  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 11:46:00.692  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 11:46:00.693  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 11:46:00.693  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 11:46:00.952  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 11:46:00.955  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 11:46:00.958  INFO 11500 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 11:46:00.963  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658281560961 with initial instances count: 0
-2022-07-20 11:46:00.964  INFO 11500 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 11:46:00.965  INFO 11500 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658281560965, current=UP, previous=STARTING]
-2022-07-20 11:46:00.968  INFO 11500 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:5970e2159dfa1dd156ba05a8aec09273: registering service...
-2022-07-20 11:46:00.972  INFO 11500 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 11.891 seconds (JVM running for 13.875)
-2022-07-20 11:46:01.082  INFO 11500 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:5970e2159dfa1dd156ba05a8aec09273 - registration status: 204
-2022-07-20 11:46:02.028  INFO 11500 --- [RMI TCP Connection(4)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 11:46:02.029  INFO 11500 --- [RMI TCP Connection(4)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 11:46:02.066  INFO 11500 --- [RMI TCP Connection(4)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 37 ms
-2022-07-20 11:46:30.962  INFO 11500 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 11:46:30.962  INFO 11500 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 11:46:30.962  INFO 11500 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 11:46:30.962  INFO 11500 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 11:46:30.962  INFO 11500 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 11:46:30.963  INFO 11500 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 11:46:30.963  INFO 11500 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 11:46:31.030  INFO 11500 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 11:49:51.873  INFO 11500 --- [http-nio-auto-1-exec-1] c.a.p.a.a.i.c.AlbumsController           : Returning 2 albums
-2022-07-20 11:51:00.701  INFO 11500 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 11:56:00.719  INFO 11500 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:01:00.728  INFO 11500 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:06:00.731  INFO 11500 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:15:07.529  INFO 6312 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 12:15:08.914  WARN 6312 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 12:15:09.211  INFO 6312 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 12:15:09.340  INFO 6312 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7a2f5fca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 12:15:10.063  INFO 6312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 12:15:10.105  INFO 6312 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 12:15:10.106  INFO 6312 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 12:15:10.114  INFO 6312 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 12:15:10.324  INFO 6312 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 12:15:10.325  INFO 6312 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2777 ms
-2022-07-20 12:15:10.453  WARN 6312 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 12:15:10.454  INFO 6312 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 12:15:10.468  INFO 6312 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1173fbb2
-2022-07-20 12:15:11.376  WARN 6312 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 12:15:11.377  INFO 6312 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 12:15:11.628  INFO 6312 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 12:15:12.075  INFO 6312 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-20 12:15:12.671  INFO 6312 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 12:15:12.884  INFO 6312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52964 (http) with context path ''
-2022-07-20 12:15:12.885  INFO 6312 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 52964
-2022-07-20 12:15:12.898  INFO 6312 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 12:15:12.944  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 12:15:13.131  INFO 6312 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 12:15:13.132  INFO 6312 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 12:15:13.288  INFO 6312 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 12:15:13.288  INFO 6312 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 12:15:13.509  INFO 6312 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:15:13.765  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 12:15:13.766  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 12:15:13.766  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 12:15:13.766  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 12:15:13.766  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 12:15:13.767  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 12:15:13.767  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 12:15:13.878  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 12:15:13.881  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 12:15:13.884  INFO 6312 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 12:15:13.889  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658283313887 with initial instances count: 0
-2022-07-20 12:15:13.890  INFO 6312 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 12:15:13.891  INFO 6312 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658283313891, current=UP, previous=STARTING]
-2022-07-20 12:15:13.894  INFO 6312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:4215d1bced30d14196639e3e3444a4ee: registering service...
-2022-07-20 12:15:13.898  INFO 6312 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 9.539 seconds (JVM running for 11.861)
-2022-07-20 12:15:13.973  INFO 6312 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:4215d1bced30d14196639e3e3444a4ee - registration status: 204
-2022-07-20 12:15:14.230  INFO 6312 --- [RMI TCP Connection(4)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 12:15:14.231  INFO 6312 --- [RMI TCP Connection(4)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 12:15:14.241  INFO 6312 --- [RMI TCP Connection(4)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2022-07-20 12:15:43.891  INFO 6312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 12:15:43.891  INFO 6312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 12:15:43.892  INFO 6312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 12:15:43.892  INFO 6312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 12:15:43.892  INFO 6312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 12:15:43.892  INFO 6312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 12:15:43.892  INFO 6312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 12:15:43.946  INFO 6312 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 12:18:08.675  INFO 6312 --- [http-nio-auto-1-exec-1] c.a.p.a.a.i.c.AlbumsController           : Returning 2 albums
-2022-07-20 12:20:13.780  INFO 6312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:25:13.790  INFO 6312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:30:13.799  INFO 6312 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:34:42.808  INFO 8772 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 12:34:44.693  WARN 8772 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 12:34:45.084  INFO 8772 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 12:34:45.277  INFO 8772 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$8d5d4fd1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 12:34:46.541  INFO 8772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 12:34:46.605  INFO 8772 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 12:34:46.607  INFO 8772 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 12:34:46.620  INFO 8772 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 12:34:46.988  INFO 8772 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 12:34:46.989  INFO 8772 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4159 ms
-2022-07-20 12:34:47.266  WARN 8772 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 12:34:47.267  INFO 8772 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 12:34:47.297  INFO 8772 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4c3df6c3
-2022-07-20 12:34:48.803  WARN 8772 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 12:34:48.804  INFO 8772 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 12:34:49.161  INFO 8772 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 12:34:49.767  WARN 8772 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-07-20 12:34:50.432  INFO 8772 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 12:34:50.700  INFO 8772 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 52018 (http) with context path ''
-2022-07-20 12:34:50.702  INFO 8772 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 52018
-2022-07-20 12:34:50.711  INFO 8772 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 12:34:50.770  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 12:34:51.018  INFO 8772 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 12:34:51.018  INFO 8772 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 12:34:51.247  INFO 8772 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 12:34:51.248  INFO 8772 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 12:34:51.490  INFO 8772 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:34:51.808  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 12:34:51.809  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 12:34:51.809  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 12:34:51.809  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 12:34:51.810  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 12:34:51.810  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 12:34:51.810  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 12:34:52.095  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 12:34:52.100  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 12:34:52.104  INFO 8772 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 12:34:52.110  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658284492109 with initial instances count: 0
-2022-07-20 12:34:52.112  INFO 8772 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 12:34:52.113  INFO 8772 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658284492113, current=UP, previous=STARTING]
-2022-07-20 12:34:52.116  INFO 8772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:acdb9cbfc3e0103fcb4cc5ec8c289c96: registering service...
-2022-07-20 12:34:52.121  INFO 8772 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 11.969 seconds (JVM running for 14.496)
-2022-07-20 12:34:52.226  INFO 8772 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:acdb9cbfc3e0103fcb4cc5ec8c289c96 - registration status: 204
-2022-07-20 12:34:53.202  INFO 8772 --- [RMI TCP Connection(3)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 12:34:53.202  INFO 8772 --- [RMI TCP Connection(3)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 12:34:53.220  INFO 8772 --- [RMI TCP Connection(3)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
-2022-07-20 12:35:22.117  INFO 8772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 12:35:22.118  INFO 8772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 12:35:22.119  INFO 8772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 12:35:22.120  INFO 8772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 12:35:22.121  INFO 8772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 12:35:22.121  INFO 8772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 12:35:22.122  INFO 8772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 12:35:22.196  INFO 8772 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 12:39:51.815  INFO 8772 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:43:17.790  INFO 9144 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 12:43:19.751  WARN 9144 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 12:43:20.209  INFO 9144 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 12:43:20.424  INFO 9144 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$971fa902] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 12:43:21.836  INFO 9144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 12:43:21.953  INFO 9144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 12:43:21.954  INFO 9144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 12:43:21.973  INFO 9144 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 12:43:22.257  INFO 9144 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 12:43:22.257  INFO 9144 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4435 ms
-2022-07-20 12:43:22.426  WARN 9144 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 12:43:22.427  INFO 9144 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 12:43:22.442  INFO 9144 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@843a0e8
-2022-07-20 12:43:23.516  WARN 9144 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 12:43:23.517  INFO 9144 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 12:43:23.807  INFO 9144 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 12:43:24.304  INFO 9144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-20 12:43:24.905  INFO 9144 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 12:43:25.120  INFO 9144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 59591 (http) with context path ''
-2022-07-20 12:43:25.121  INFO 9144 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 59591
-2022-07-20 12:43:25.131  INFO 9144 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 12:43:25.185  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 12:43:25.399  INFO 9144 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 12:43:25.400  INFO 9144 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 12:43:25.610  INFO 9144 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 12:43:25.610  INFO 9144 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 12:43:25.878  INFO 9144 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:43:26.197  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 12:43:26.198  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 12:43:26.198  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 12:43:26.198  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 12:43:26.198  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 12:43:26.199  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 12:43:26.199  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 12:43:26.471  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 12:43:26.475  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 12:43:26.480  INFO 9144 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 12:43:26.486  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658285006484 with initial instances count: 0
-2022-07-20 12:43:26.487  INFO 9144 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 12:43:26.488  INFO 9144 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658285006488, current=UP, previous=STARTING]
-2022-07-20 12:43:26.491  INFO 9144 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:f60b4270869d00ded4d1c098e0752467: registering service...
-2022-07-20 12:43:26.496  INFO 9144 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 11.868 seconds (JVM running for 13.897)
-2022-07-20 12:43:26.628  INFO 9144 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:f60b4270869d00ded4d1c098e0752467 - registration status: 204
-2022-07-20 12:43:27.413  INFO 9144 --- [RMI TCP Connection(6)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 12:43:27.414  INFO 9144 --- [RMI TCP Connection(6)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 12:43:27.430  INFO 9144 --- [RMI TCP Connection(6)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2022-07-20 12:43:56.484  INFO 9144 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 12:43:56.484  INFO 9144 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 12:43:56.484  INFO 9144 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 12:43:56.485  INFO 9144 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 12:43:56.485  INFO 9144 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 12:43:56.485  INFO 9144 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 12:43:56.485  INFO 9144 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 12:43:56.527  INFO 9144 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 12:48:26.212  INFO 9144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:53:26.217  INFO 9144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 12:58:26.233  INFO 9144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 13:03:26.236  INFO 9144 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 14:11:16.604  INFO 916 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 14:11:17.961  WARN 916 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 14:11:18.269  INFO 916 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 14:11:18.395  INFO 916 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e99ae6f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 14:11:19.125  INFO 916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 14:11:19.160  INFO 916 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 14:11:19.160  INFO 916 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 14:11:19.170  INFO 916 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 14:11:19.386  INFO 916 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 14:11:19.386  INFO 916 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2761 ms
-2022-07-20 14:11:19.547  WARN 916 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 14:11:19.547  INFO 916 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 14:11:19.560  INFO 916 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2dae5a5b
-2022-07-20 14:11:20.466  WARN 916 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 14:11:20.466  INFO 916 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 14:11:20.691  INFO 916 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 14:11:21.144  INFO 916 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-20 14:11:21.660  INFO 916 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 14:11:21.836  INFO 916 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 60449 (http) with context path ''
-2022-07-20 14:11:21.837  INFO 916 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 60449
-2022-07-20 14:11:21.844  INFO 916 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 14:11:21.890  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 14:11:22.084  INFO 916 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 14:11:22.084  INFO 916 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 14:11:22.255  INFO 916 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 14:11:22.256  INFO 916 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 14:11:22.579  INFO 916 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 14:11:22.990  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 14:11:22.991  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 14:11:22.991  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 14:11:22.991  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 14:11:22.991  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 14:11:22.992  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 14:11:22.992  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 14:11:23.264  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 14:11:23.267  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 14:11:23.270  INFO 916 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 14:11:23.276  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658290283274 with initial instances count: 0
-2022-07-20 14:11:23.277  INFO 916 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 14:11:23.278  INFO 916 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658290283278, current=UP, previous=STARTING]
-2022-07-20 14:11:23.281  INFO 916 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:1bf34427788f5c67802fe329897b5698: registering service...
-2022-07-20 14:11:23.285  INFO 916 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 9.222 seconds (JVM running for 11.076)
-2022-07-20 14:11:23.387  INFO 916 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:1bf34427788f5c67802fe329897b5698 - registration status: 204
-2022-07-20 14:11:24.300  INFO 916 --- [RMI TCP Connection(7)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 14:11:24.301  INFO 916 --- [RMI TCP Connection(7)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 14:11:24.311  INFO 916 --- [RMI TCP Connection(7)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2022-07-20 14:11:53.269  INFO 916 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 14:11:53.270  INFO 916 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 14:11:53.270  INFO 916 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 14:11:53.270  INFO 916 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 14:11:53.271  INFO 916 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 14:11:53.271  INFO 916 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 14:11:53.271  INFO 916 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 14:11:53.328  INFO 916 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 14:16:23.005  INFO 916 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 14:21:23.013  INFO 916 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 14:26:23.017  INFO 916 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 14:31:23.031  INFO 916 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 14:36:23.040  INFO 916 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 15:19:44.559  INFO 2060 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 15:19:46.464  WARN 2060 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 15:19:46.920  INFO 2060 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 15:19:47.114  INFO 2060 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$4b9ba0f3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 15:19:48.491  INFO 2060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 15:19:48.564  INFO 2060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 15:19:48.565  INFO 2060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 15:19:48.579  INFO 2060 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 15:19:49.122  INFO 2060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 15:19:49.122  INFO 2060 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4538 ms
-2022-07-20 15:19:49.268  WARN 2060 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 15:19:49.269  INFO 2060 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 15:19:49.281  INFO 2060 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2d35d83a
-2022-07-20 15:19:50.359  WARN 2060 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 15:19:50.360  INFO 2060 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 15:19:50.665  INFO 2060 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 15:19:51.182  WARN 2060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2022-07-20 15:19:51.810  INFO 2060 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 15:19:52.052  INFO 2060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 61031 (http) with context path ''
-2022-07-20 15:19:52.054  INFO 2060 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 61031
-2022-07-20 15:19:52.063  INFO 2060 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 15:19:52.130  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 15:19:52.369  INFO 2060 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 15:19:52.369  INFO 2060 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 15:19:52.535  INFO 2060 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 15:19:52.535  INFO 2060 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 15:19:52.794  INFO 2060 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 15:19:53.094  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 15:19:53.095  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 15:19:53.095  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 15:19:53.095  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 15:19:53.095  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 15:19:53.096  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 15:19:53.096  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 15:19:53.215  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 15:19:53.219  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 15:19:53.222  INFO 2060 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 15:19:53.227  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658294393225 with initial instances count: 0
-2022-07-20 15:19:53.228  INFO 2060 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 15:19:53.229  INFO 2060 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658294393229, current=UP, previous=STARTING]
-2022-07-20 15:19:53.232  INFO 2060 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:e27844c69a1e39d5a17b9254806abd6f: registering service...
-2022-07-20 15:19:53.237  INFO 2060 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 11.705 seconds (JVM running for 13.847)
-2022-07-20 15:19:53.306  INFO 2060 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:e27844c69a1e39d5a17b9254806abd6f - registration status: 204
-2022-07-20 15:19:53.668  INFO 2060 --- [RMI TCP Connection(2)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 15:19:53.669  INFO 2060 --- [RMI TCP Connection(2)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 15:19:53.683  INFO 2060 --- [RMI TCP Connection(2)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
-2022-07-20 15:20:23.221  INFO 2060 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 15:20:23.221  INFO 2060 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 15:20:23.221  INFO 2060 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 15:20:23.221  INFO 2060 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 15:20:23.221  INFO 2060 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 15:20:23.221  INFO 2060 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 15:20:23.222  INFO 2060 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 15:20:23.264  INFO 2060 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 15:23:31.438  INFO 7768 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
-2022-07-20 15:23:33.861  WARN 7768 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
-2022-07-20 15:23:34.663  INFO 7768 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fce5687c-8caa-3de7-86f9-d6b89e9c58f8
-2022-07-20 15:23:34.918  INFO 7768 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2dccb0c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-07-20 15:23:36.523  INFO 7768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-07-20 15:23:36.572  INFO 7768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-07-20 15:23:36.573  INFO 7768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
-2022-07-20 15:23:36.582  INFO 7768 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
-2022-07-20 15:23:36.834  INFO 7768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-07-20 15:23:36.834  INFO 7768 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5368 ms
-2022-07-20 15:23:37.010  WARN 7768 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 15:23:37.011  INFO 7768 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 15:23:37.031  INFO 7768 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1b2d7181
-2022-07-20 15:23:38.435  WARN 7768 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
-2022-07-20 15:23:38.436  INFO 7768 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2022-07-20 15:23:38.801  INFO 7768 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2022-07-20 15:23:39.426  INFO 7768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2022-07-20 15:23:40.029  INFO 7768 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2022-07-20 15:23:40.247  INFO 7768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58572 (http) with context path ''
-2022-07-20 15:23:40.249  INFO 7768 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 58572
-2022-07-20 15:23:40.258  INFO 7768 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
-2022-07-20 15:23:40.319  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
-2022-07-20 15:23:40.557  INFO 7768 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
-2022-07-20 15:23:40.558  INFO 7768 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
-2022-07-20 15:23:40.769  INFO 7768 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
-2022-07-20 15:23:40.770  INFO 7768 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
-2022-07-20 15:23:41.027  INFO 7768 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
-2022-07-20 15:23:41.364  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 15:23:41.365  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 15:23:41.365  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 15:23:41.367  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 15:23:41.367  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 15:23:41.368  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
-2022-07-20 15:23:41.369  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 15:23:41.691  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
-2022-07-20 15:23:41.694  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
-2022-07-20 15:23:41.697  INFO 7768 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
-2022-07-20 15:23:41.703  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658294621701 with initial instances count: 0
-2022-07-20 15:23:41.705  INFO 7768 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
-2022-07-20 15:23:41.705  INFO 7768 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658294621705, current=UP, previous=STARTING]
-2022-07-20 15:23:41.708  INFO 7768 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:bdbd1a978d1d01a8a77f6464943a4476: registering service...
-2022-07-20 15:23:41.713  INFO 7768 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 13.039 seconds (JVM running for 15.029)
-2022-07-20 15:23:41.834  INFO 7768 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:bdbd1a978d1d01a8a77f6464943a4476 - registration status: 204
-2022-07-20 15:23:42.855  INFO 7768 --- [RMI TCP Connection(7)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-07-20 15:23:42.856  INFO 7768 --- [RMI TCP Connection(7)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-07-20 15:23:42.872  INFO 7768 --- [RMI TCP Connection(7)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
-2022-07-20 15:24:11.700  INFO 7768 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
-2022-07-20 15:24:11.700  INFO 7768 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
-2022-07-20 15:24:11.701  INFO 7768 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
-2022-07-20 15:24:11.701  INFO 7768 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
-2022-07-20 15:24:11.702  INFO 7768 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
-2022-07-20 15:24:11.702  INFO 7768 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
-2022-07-20 15:24:11.703  INFO 7768 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
-2022-07-20 15:24:11.752  INFO 7768 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-21 11:35:40.215  INFO [albums-ws,,,] 10080 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
+2022-07-21 11:35:41.476  WARN [albums-ws,,,] 10080 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-07-21 11:35:41.844  INFO [albums-ws,,,] 10080 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9ab4338e-8e47-3c9a-b4d8-b3d18693f8d0
+2022-07-21 11:35:42.154  INFO [albums-ws,,,] 10080 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$ed2af8be] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-21 11:35:43.029  INFO [albums-ws,,,] 10080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-07-21 11:35:43.063  INFO [albums-ws,,,] 10080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-21 11:35:43.064  INFO [albums-ws,,,] 10080 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-21 11:35:43.071  INFO [albums-ws,,,] 10080 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
+2022-07-21 11:35:43.270  INFO [albums-ws,,,] 10080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-21 11:35:43.271  INFO [albums-ws,,,] 10080 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3034 ms
+2022-07-21 11:35:43.480  WARN [albums-ws,,,] 10080 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-21 11:35:43.480  INFO [albums-ws,,,] 10080 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-21 11:35:43.492  INFO [albums-ws,,,] 10080 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7f82d8bb
+2022-07-21 11:35:45.290  WARN [albums-ws,,,] 10080 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-21 11:35:45.291  INFO [albums-ws,,,] 10080 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-21 11:35:45.847  INFO [albums-ws,,,] 10080 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-21 11:35:46.587  WARN [albums-ws,,,] 10080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-21 11:41:50.852  INFO [albums-ws,,,] 10812 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : No active profile set, falling back to default profiles: default
+2022-07-21 11:41:52.211  WARN [albums-ws,,,] 10812 --- [restartedMain] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-07-21 11:41:52.544  INFO [albums-ws,,,] 10812 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9ab4338e-8e47-3c9a-b4d8-b3d18693f8d0
+2022-07-21 11:41:52.851  INFO [albums-ws,,,] 10812 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$77276900] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-21 11:41:53.692  INFO [albums-ws,,,] 10812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-07-21 11:41:53.741  INFO [albums-ws,,,] 10812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-21 11:41:53.742  INFO [albums-ws,,,] 10812 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.14]
+2022-07-21 11:41:53.754  INFO [albums-ws,,,] 10812 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.3\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-15.0.2;C:\Program Files\Git\bin;C:\minikube;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Windows\System32\wbem;C:\Program Files\PostgreSQL\12\bin;C:\ProgramData\chocolatey\bin;%ERLANG_HOME%\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.10.5\sbin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\JetBrains\IntelliJ IDEA 2020.1\plugins\maven\lib\maven3\bin;C:\Users\Дмитрий\AppData\Local\Microsoft\WindowsApps;"c:\Windows;c:\Windows\system32";C:\Program Files\heroku\bin;C:\Program Files\Java\jdk-16.0.1;\bin;C:\Users\Дмитрий\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Дмитрий\AppData\Roaming\npm;C:\Program Files\Kubernetes\Minikube;C:\Program Files\Java\jdk-11;C:\Program Files\Java\jdk-17.0.3.1;C:\Windows\System32\wbem;;.]
+2022-07-21 11:41:54.111  INFO [albums-ws,,,] 10812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-21 11:41:54.112  INFO [albums-ws,,,] 10812 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3242 ms
+2022-07-21 11:41:54.504  WARN [albums-ws,,,] 10812 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-21 11:41:54.504  INFO [albums-ws,,,] 10812 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-21 11:41:54.515  INFO [albums-ws,,,] 10812 --- [restartedMain] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@f11bef2
+2022-07-21 11:41:56.236  WARN [albums-ws,,,] 10812 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-07-21 11:41:56.237  INFO [albums-ws,,,] 10812 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-07-21 11:41:56.774  INFO [albums-ws,,,] 10812 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-21 11:41:57.482  WARN [albums-ws,,,] 10812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-07-21 11:41:58.494  INFO [albums-ws,,,] 10812 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-07-21 11:41:58.699  INFO [albums-ws,,,] 10812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 58043 (http) with context path ''
+2022-07-21 11:41:58.700  INFO [albums-ws,,,] 10812 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 58043
+2022-07-21 11:41:58.707  INFO [albums-ws,,,] 10812 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-07-21 11:41:58.752  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-07-21 11:41:58.971  INFO [albums-ws,,,] 10812 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-07-21 11:41:58.971  INFO [albums-ws,,,] 10812 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2022-07-21 11:41:59.152  INFO [albums-ws,,,] 10812 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-07-21 11:41:59.152  INFO [albums-ws,,,] 10812 --- [restartedMain] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-07-21 11:41:59.365  INFO [albums-ws,,,] 10812 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-21 11:41:59.604  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-21 11:41:59.605  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-21 11:41:59.605  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-21 11:41:59.605  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-21 11:41:59.605  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-21 11:41:59.606  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-07-21 11:41:59.606  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-21 11:41:59.744  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-21 11:41:59.746  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-07-21 11:41:59.749  INFO [albums-ws,,,] 10812 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-07-21 11:41:59.756  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1658367719754 with initial instances count: 0
+2022-07-21 11:41:59.774  INFO [albums-ws,,,] 10812 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ALBUMS-WS with eureka with status UP
+2022-07-21 11:41:59.775  INFO [albums-ws,,,] 10812 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1658367719775, current=UP, previous=STARTING]
+2022-07-21 11:41:59.778  INFO [albums-ws,,,] 10812 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:6825e9f882fc5958ab8352e8f515e7e3: registering service...
+2022-07-21 11:41:59.783  INFO [albums-ws,,,] 10812 --- [restartedMain] c.a.p.a.a.PhotoAppApiAlbumsApplication   : Started PhotoAppApiAlbumsApplication in 11.252 seconds (JVM running for 13.034)
+2022-07-21 11:41:59.866  INFO [albums-ws,,,] 10812 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ALBUMS-WS/albums-ws:6825e9f882fc5958ab8352e8f515e7e3 - registration status: 204
+2022-07-21 11:42:00.550  INFO [albums-ws,,,] 10812 --- [RMI TCP Connection(4)-192.168.1.34] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-21 11:42:00.551  INFO [albums-ws,,,] 10812 --- [RMI TCP Connection(4)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-21 11:42:00.577  INFO [albums-ws,,,] 10812 --- [RMI TCP Connection(4)-192.168.1.34] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2022-07-21 11:42:29.753  INFO [albums-ws,,,] 10812 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-07-21 11:42:29.754  INFO [albums-ws,,,] 10812 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-07-21 11:42:29.754  INFO [albums-ws,,,] 10812 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-07-21 11:42:29.754  INFO [albums-ws,,,] 10812 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-07-21 11:42:29.755  INFO [albums-ws,,,] 10812 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-07-21 11:42:29.755  INFO [albums-ws,,,] 10812 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-07-21 11:42:29.755  INFO [albums-ws,,,] 10812 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-07-21 11:42:29.795  INFO [albums-ws,,,] 10812 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-07-21 11:46:44.693  INFO [albums-ws,d65b5d8c66e33378,01f79ba3cbec8dbc,true] 10812 --- [http-nio-auto-1-exec-1] c.a.p.a.a.i.c.AlbumsController           : Returning 2 albums
+2022-07-21 11:46:45.249  INFO [albums-ws,,,] 10812 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2fd82124}] c.netflix.config.ChainedDynamicProperty  : Flipping property: localhost.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-07-21 11:46:45.292  INFO [albums-ws,,,] 10812 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2fd82124}] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-localhost
+2022-07-21 11:46:45.292  INFO [albums-ws,,,] 10812 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2fd82124}] c.netflix.loadbalancer.BaseLoadBalancer  : Client: localhost instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-07-21 11:46:45.299  INFO [albums-ws,,,] 10812 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2fd82124}] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+2022-07-21 11:46:45.302  INFO [albums-ws,,,] 10812 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@2fd82124}] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client localhost initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=localhost,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@47b221f1
+2022-07-21 11:46:59.620  INFO [albums-ws,,,] 10812 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-21 11:51:59.625  INFO [albums-ws,,,] 10812 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-07-21 11:56:59.629  INFO [albums-ws,,,] 10812 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
